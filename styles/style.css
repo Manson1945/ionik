@@ -4,7 +4,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(249, 249, 252);
+  background-color: #F9F9FC;
   margin: 0;
   padding: 0; 
 }
@@ -47,12 +47,12 @@ a {
 /* LAYOUTS */
 
 
-.bodyContainer {
+.mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(249, 249, 252);
+  background-color: #F9F9FC;
   margin-top: 20px
 }
 
@@ -60,9 +60,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 3px;
-  box-shadow: 1px 1px 10px  rgba(125, 103, 194, 0.08);
+  box-shadow: 1px 1px 10px  #7d67c214;
   margin: 20px;
   padding: 20px;
   max-width: 500px;
@@ -71,15 +71,15 @@ a {
 }
 
 .cardContainer:hover {
-  box-shadow:  2px 2px 5px  rgba(126, 103, 194, 0.389); 
+  box-shadow:  2px 2px 5px  #7e67c263; 
 }
 
-.img {
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #7727B4;
-  padding-right: 20px;
+  padding-right: 10px;
   
 }
 
@@ -89,6 +89,7 @@ a {
   font-family: "Muli", sans-serif;
   font-size: 22px;
   font-weight: 600;
+  letter-spacing: .3px;
   color: #7727B4;
   
 }
@@ -105,7 +106,7 @@ a {
 
 @media (min-width: 960px) {
   
-.bodyContainer {
+.mainContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   max-width: 1100px;  
@@ -122,7 +123,7 @@ a {
 }
 
 footer {
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 -4px 10px rgba(125, 103, 194, 0.08);
   padding: 50px;
   margin-top: 30px;
@@ -178,12 +179,13 @@ footer {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #6b7280; /* gris más oscuro */
+  color: #86848b; 
   transition: color 0.2s ease;
 }
 
 .breadcrumb a:hover {
-  color: #374151; /* gris aún más oscuro al pasar el mouse */
+  
+  color: #7727B4; 
 }
 
 .breadcrumb [aria-current="page"] {
@@ -195,7 +197,7 @@ footer {
 
 /* ---------------------------------------------------------------------------- */
 
-.manualContainer {
+.guideContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,44 +206,61 @@ footer {
   
 }
 
+.guideIcon {
 
-.manualTittle {
+  height: 100px;
+  /* display: flex;
+  justify-content: center; */
+  
+  color: #7727B4;
+  padding-right: 20px;
+}
+
+
+.guideTittle {
   font-family: "Muli", sans-serif;
   font-size: 26px;
   letter-spacing: .5px;
 }
 
-.manualText {
+.guideText {
   font-family: "Muli", sans-serif;
   font-size: 18px;
   color: #86848b;
 }
 
 
-.manualLinkContainer {
+.guideLinkContainer {
   
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
+
 
 
 .manualLink {
   display: flex;
-  justify-content: center;
+  justify-content:start;
   align-items: center;
   background-color: white;
   border-radius: 3px;
   box-shadow: 1px 1px 2px 2px rgba(125, 103, 194, 0.08);
   margin:20px;
   padding: 20px;
+  width: 700px;
   max-width: 700px; 
+  transition: box-shadow 0.3s ease, border-color 0.3s ease
+}
+
+.manualLink:hover {
+  box-shadow:  2px 2px 5px  rgba(126, 103, 194, 0.389);
 }
 
 
 .cardTittleManual {
   margin-bottom: 30px;
+  text-align:start;
   line-height: 40px;
 }
 
@@ -253,7 +272,7 @@ footer {
 
 /* ------------------------------------------------------------------------------- */
 
-.tangoContainer {
+.manualContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,11 +283,11 @@ footer {
 
 }
 
-.tangoContainer2 {
-  display: flex;
+.stepsContainer {
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
   background-color: white;
   border-radius: 3px;
@@ -278,14 +297,14 @@ footer {
   max-width: 700px;
 }
 
-.tangoContainer h1 {
+.manualContainer h1 {
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 600;
   color: #7727B4;
 }
 
-.tangoContainer p {
+.manualContainer p {
   margin: 3px;
   font-size: 12px;
   color: #86848b;
@@ -293,21 +312,22 @@ footer {
   
 }
 
-.tangoContainer h2 {
+.manualContainer h2 {
   font-size: 18px;
   font-weight: 400;
 }
 
 .divisor {
+  height: 30px;
   margin: 30px;
 }
 
-.explanation {
+.step {
   margin: 30px;
   margin-bottom: 90px;
 }
 
-.explanation img {
+.step img {
   width: 100%;
   height: auto;
   max-width: 800px; 

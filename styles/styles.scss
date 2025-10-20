@@ -1,0 +1,81 @@
+/* ---- RESETS & VARIABLES ---- */
+
+$primaryColor: #7727B4;
+
+$bodyMainColor: #F9F9FC;
+
+$cardsColor: #ffffff;
+
+$shadowColor: #7d67c214;
+
+$shadowHoverColor: #7e67c263;
+
+$greyTextColor: #86848b;
+
+$footerHoverColor: #86848b40;
+
+$font: "Muli", sans-serif;
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9FC;
+  margin: 0;
+  padding: 0; 
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #7727B4;
+  a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  }
+  img {
+  width: 200px;
+  height: 65px;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* MAIN */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9FC;
+  margin-top: 20px;
+
+  a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px  #7d67c214;
+  margin: 20px;
+  padding: 20px;
+  max-width: 500px;
+  max-height: 150px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  } 
+}
+
+
