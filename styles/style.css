@@ -14,6 +14,7 @@ html, body {
 }
 
 main {
+  
   flex: 1;
 }
 
@@ -121,6 +122,8 @@ a {
   }
 
 }
+
+
 
 footer {
   background-color: #ffffff;
@@ -277,11 +280,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  padding: 20px;
+  /* margin: 20px; */
+  /* padding: 20px; */
   font-family: "Muli", sans-serif;
 
 }
+
 
 .stepsContainer {
   /* display: flex;
@@ -299,7 +303,7 @@ footer {
 
 .manualContainer h1 {
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: #7727B4;
 }
@@ -323,14 +327,25 @@ footer {
 }
 
 .step {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
   margin: 30px;
   margin-bottom: 90px;
+}
+
+.step h2 {
+  width: auto;
+  text-align:start;
+  
+  
+  
 }
 
 .step img {
   width: 100%;
   height: auto;
-  max-width: 800px; 
+  max-width: 400px; 
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   object-fit: contain; 
@@ -346,5 +361,25 @@ footer {
   font-family: "Muli", sans-serif;
   font-size: 18px;
   color: #7727B4;
+
+}
+
+
+
+@media (max-width: 400px) {
+  .cardTittle {
+    font-size: 18px;
+  }
+  .cardText{
+    font-size: 12px;
+  }
+  .guideTittle {
+    font-size: 22px;
+  }
+  .guideText {
+    font-size: 14px;
+  }
+
+
 
 }
