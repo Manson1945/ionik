@@ -45,6 +45,7 @@ a {
 }
 
 
+
 /* LAYOUTS */
 
 
@@ -54,7 +55,8 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #F9F9FC;
-  margin-top: 20px
+  margin-top: 20px;
+  
 }
 
 .cardContainer {
@@ -163,9 +165,10 @@ footer {
 .breadcrumb {
   font-family: "Muli", sans-serif;
   font-size: 1rem;
-  color: #9ca3af; /* gris medio (tailwind gray-400 aprox) */
-  background-color: #f9f9fb; /* fondo sutil */
-  padding-left: 40px; 
+  color: #9ca3af; 
+  background-color: #f9f9fb; 
+  padding-left: 40px;
+  padding: 20px; 
   margin-top: 40px;
   border-radius: 6px;
 }
@@ -174,7 +177,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem; /* espacio entre items */
+  gap: 0.5rem; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -193,7 +196,7 @@ footer {
 
 .breadcrumb [aria-current="page"] {
   font-weight: 500;
-  color: #111827; /* el texto actual más fuerte */
+  color: #111827; 
   pointer-events: none;
 }
 
@@ -210,11 +213,7 @@ footer {
 }
 
 .guideIcon {
-
   height: 100px;
-  /* display: flex;
-  justify-content: center; */
-  
   color: #7727B4;
   padding-right: 20px;
 }
@@ -280,18 +279,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 20px; */
-  /* padding: 20px; */
   font-family: "Muli", sans-serif;
 
 }
 
 
 .stepsContainer {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
   background-color: white;
   border-radius: 3px;
@@ -319,6 +312,8 @@ footer {
 .manualContainer h2 {
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: .3;
+  line-height: 25px;
 }
 
 .divisor {
@@ -327,9 +322,6 @@ footer {
 }
 
 .step {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin: 30px;
   margin-bottom: 90px;
 }
@@ -355,6 +347,13 @@ footer {
   width: 100%;
 }
 
+.back i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+}
+
 .back a {
   display: flex;
   justify-content: left;
@@ -366,7 +365,7 @@ footer {
 
 
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .cardTittle {
     font-size: 18px;
   }
@@ -382,4 +381,4 @@ footer {
 
 
 
-}
+} */
