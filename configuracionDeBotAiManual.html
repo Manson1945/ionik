@@ -79,70 +79,74 @@
 
         <!-- STEP 5 -->
         <div class="step">
-          <h2>5. A continuación encontrará la configuración general: OPEN AI API KEY será la clave privada que autentica tu cuenta de OpenAI para realizar las solicitudes de IA. 
-              Sin esta clave, no se pueden generar respuestas. MOTOR AI es el modelo de lenguaje utilizado (por ejemplo, gpt-4o-mini-2024-07-18). Define la capacidad, velocidad y costo del procesamiento.
+          <h2>5. A continuación encontrará la configuración general:<br><br>
+              OPEN AI API KEY será la clave privada que autentica tu cuenta de OpenAI para realizar las solicitudes de IA. 
+              Sin esta clave, no se pueden generar respuestas.<br><br> 
+              MOTOR AI es el modelo de lenguaje utilizado (por ejemplo, gpt-4o-mini-2024-07-18). Define la capacidad, velocidad y costo del procesamiento.<br><br>
               FINE TUNING ID es el identificador de un modelo personalizado (si se usa fine-tuning). Dejar vacío si se utiliza un modelo base de OpenAI.</h2>
-          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/0684b298-3483-48e8-a887-8581779859ac/a25a51a1-7182-46f9-9daf-1012f129bf72.png"/>
+          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/1b3f14a6-dd08-4413-9213-512661e681bf/758b49d1-748c-464e-81fb-2bb5b76e2ca2.png"/>
 
 
         </div>
 
         <!-- STEP 6 -->
         <div class="step">
-          <h2>Una vez realizadala configuración general, deberá realizar la configuración de los parámetros del modelo de Bot: TEMPERATURE controla la creatividad de las respuestas.
-              con valores bajos (0.1 0.3) obtendrá respuestas más precisas y predecibles. Con valores altos (0.7 1.0) obtendrá respuestas más variadas y creativas.
-              MAX TOKENS es el número máximo de tokens (palabras + fragmentos) que puede generar el modelo por respuesta. Recomendado dejar en 300.
-              TOP_P es el filtro de probabilidad acumulada. Valores cercanos a 1 permiten más diversidad. Valores bajos hacen las respuestas más restrictivas.
+          <h2>6. Una vez realizadala configuración general, deberá realizar la configuración de los parámetros del modelo de Bot:<br><br> 
+              TEMPERATURE controla la creatividad de las respuestas.
+              con valores bajos (0.1 0.3) obtendrá respuestas más precisas y predecibles. Con valores altos (0.7 1.0) obtendrá respuestas más variadas y creativas.<br><br>
+              MAX TOKENS es el número máximo de tokens (palabras + fragmentos) que puede generar el modelo por respuesta. Recomendado dejar en 300.<br><br>
+              TOP_P es el filtro de probabilidad acumulada. Valores cercanos a 1 permiten más diversidad. Valores bajos hacen las respuestas más restrictivas.<br><br>
               N es el número de respuestas que el modelo debe generar por cada solicitud. Generalmente se usa 1.</h2>
-            <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/930056ae-59cf-4ef2-ae1a-e53ce3a03a2f/af88c0a0-8871-4c6e-8574-5a49113e26be.png" />
+            <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/76f7484f-e6e6-4675-a6e5-4b1f0f3bb2a8/61a3cf71-d934-42c4-9129-180b9d8a26a7.png" />
 
 
         </div>
 
         <!-- STEP 7 -->
         <div class="step">
-          <h2>7. DETECTAR NÚMERO PARA BÚSQUEDA DE DATOS
-                 Permite definir si el bot debe buscar automáticamente mediante el número WhatsApp consultas mediante API los datos del usuario. Complementa con URL ENDPOINT (FORMATO JSON).
-                 LÍMITE DE HISTORIA (MEMORIA IA)
-                 Cantidad de mensajes previos que la IA recordará en cada conversación. Controla el contexto disponible.
+          <h2>7. Configuración del modelo de memoria e interacción:<br><br> 
+                 DETECTAR NÚMERO PARA BÚSQUEDA DE DATOS 
+                 Permite definir si el bot debe buscar automáticamente mediante el número WhatsApp consultas mediante API los datos del usuario. 
+                 Complementa con URL ENDPOINT (FORMATO JSON).<br><br> 
+                 LÍMITE DE HISTORIA (MEMORIA IA) 
+                 Es la cantidad de mensajes previos que la IA recordará en cada conversación. Controla el contexto disponible.<br><br>
                  LÍMITE DE CONSULTAS PARA EL USUARIO
-                 Número máximo de interacciones que un usuario puede realizar con este bot. 0= sin límite.
+                 Es el número máximo de interacciones que un usuario puede realizar con este bot. 0= sin límite.<br><br>
                  TIEMPO DE ESPERA
-                 Tiempo que debe pasar antes de que el usuario pueda volver a interactuar (útil para bots con ventanas de tiempo).</h2>
-          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/a1857971-483c-4da4-8046-80c93da0059e/3dfefaca-6264-44df-bddd-c19559f5d828.png" />
+                 Es el tiempo que debe pasar antes de que el usuario pueda volver a interactuar (útil para bots con ventanas de tiempo).</h2>
+          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/a1857971-483c-4da4-8046-80c93da0059e/e1677914-9748-4665-8829-e454795692b5.png" />
 
         </div>
 
         <!-- STEP 8 -->
         <div class="step">
-          <h2>8. TOTAL REQUEST
-                 Cantidad total de solicitudes enviadas a la API de OpenAI.
-                 TOKENS ENVIADOS
-                 Número total de tokens usados en los mensajes de entrada (prompts).
-                 TOKENS RECIBIDOS
-                 Número total de tokens generados por las respuestas de la IA.
-                 TOKENS TOTALES
-                 Suma de tokens enviados y recibidos. Útil para calcular el consumo total del modelo.</h2>
-          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/a90a90cc-89a6-4a01-8540-8ce395b1d7ea/dc6084ef-cb0b-4958-b981-a5e86871ea28.png" />
+          <h2>8. Configuración de estadísticas:<br><br>
+                 TOTAL REQUEST es la cantidad total de solicitudes enviadas a la API de OpenAI.<br><br>
+                 TOKENS ENVIADOS es el número total de tokens usados en los mensajes de entrada (prompts).<br><br>
+                 TOKENS RECIBIDOS es el número total de tokens generados por las respuestas de la IA.<br><br>
+                 TOKENS TOTALES es la suma de tokens enviados y recibidos. Útil para calcular el consumo total del modelo.</h2>
+          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/a90a90cc-89a6-4a01-8540-8ce395b1d7ea/6ee40e80-538a-42e7-b754-788942c10d9b.png" />
 
         </div>
 
         <!-- STEP 9 -->
         <div class="step">
-          <h2>9. SYSTEM PROMPT
-                 Texto base que define la personalidad, tono y comportamiento del chatbot.
+          <h2>9. Sistema de indicaciones:<br><br>
+                 SYSTEM PROMPT es el texto base que define la personalidad, tono y comportamiento del chatbot.
                  Ejemplo: instrucciones para pedir cédula, validar datos o responder amablemente.</h2>
-          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/16c593ae-5f90-4189-9676-87b88b0be942/304ccc1e-84f6-45a8-8d5d-c3a77f8e3500.png" />
+          <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/16c593ae-5f90-4189-9676-87b88b0be942/f8581476-94a8-4eac-9111-159509bdcc8f.png" />
 
         </div>
 
         <!-- STEP 10 -->
         <div class="step">
-          <h2>10. URL ENDPOINT (FORMATO JSON)
-              Dirección del endpoint externo donde el bot consulta información (por ejemplo, productos, deudas, datos de cliente, etc.) en formato JSON.
-              Se puede incluir una variable dinámica como {from_number},{number}, {phone}, {dni}, {documento}, {doc}, {id}, {cedula}.
-              CARGUE EL ARCHIVO CON INFORMACIÓN LIMITADA (CSV O JSON)
-              Permite subir un archivo con datos locales (por ejemplo, productos, deudas, datos de cliente, etc.) que la IA puede consultar sin depender de un endpoint externo.</h2>
+          <h2>10. Configuración de integraciones:<br><br>
+              URL ENDPOINT (FORMATO JSON)
+              es la dirección del endpoint externo donde el bot consulta información (por ejemplo, productos, deudas, datos de cliente, etc.) en formato JSON.
+              Se puede incluír una variable dinámica como {from_number}, {number}, {phone}, {dni}, {documento}, {doc}, {id}, {cedula}.<br><br>
+              CARGUE EL ARCHIVO CON INFORMACIÓN LIMITADA (CSV O JSON).
+              Permite subir un archivo con datos locales (por ejemplo, productos, deudas, datos de cliente, etc.) que la IA puede consultar sin depender de un endpoint externo.<br><br>
+              Una vez terminada la configuración haga Click en "Guardar".</h2>
           <img src="https://images.tango.us/workflows/280f17a9-d8c1-4b0b-9941-e12a5d80c256/steps/044fcc03-21a6-4769-9c62-8bb0cf076dea/94f0955a-a48e-4d7e-92f3-18b1aebd6896.png?mark-x=7&mark-y=14&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkM4MDM4RjImdz0yNiZoPTI2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D" />
 
         </div>
