@@ -44,6 +44,29 @@ a {
   
 }
 
+/* FONTS */
+
+@font-face {
+  font-family:light;
+  src: url(/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family:regular;
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family:medium;
+  src: url(/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family:bold;
+  src: url(/fonts/Roboto-Bold.ttf);
+}
+
+
 
 
 /* LAYOUTS */
@@ -89,9 +112,9 @@ a {
 
 .cardTittle {
   margin: 10px;
-  font-family: "Muli", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "bold";
+  font-size: 24px;
+  /* font-weight: 600; */
   letter-spacing: .3px;
   color: #7727B4;
   
@@ -99,7 +122,7 @@ a {
 
 .cardText {
   margin: 10px;
-  font-family: "Muli", sans-serif;
+  font-family: "regular";
   font-size: 16px;
   letter-spacing: .5px;
   line-height: 25px;
@@ -141,7 +164,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:"Muli", sans-serif;
+  font-family:"regular";
   color: #86848b;
   
 }
@@ -163,7 +186,7 @@ footer {
 
 
 .breadcrumb {
-  font-family: "Muli", sans-serif;
+  font-family: "regular";
   font-size: 1rem;
   color: #9ca3af; 
   background-color: #f9f9fb; 
@@ -208,7 +231,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  /* max-width: 700px; */
+  margin: 0 auto;
+  max-width: 700px;
   
   
 }
@@ -222,14 +246,15 @@ footer {
 
 
 .guideTittle {
-  font-family: "Muli", sans-serif;
+  font-family: "bold";
   font-size: 26px;
   letter-spacing: .5px;
 }
 
 .guideText {
-  font-family: "Muli", sans-serif;
+  font-family: "regular";
   font-size: 18px;
+  line-height: 27px;
   color: #86848b;
 }
 
@@ -281,7 +306,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Muli", sans-serif;
+  
 
 }
 
@@ -294,13 +319,15 @@ footer {
   margin: 20px;
   padding: 20px;
   max-width: 900px;
+  
 }
 
 .manualContainer h1 {
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #7727B4;
+  font-family: "bold";
 }
 
 .manualContainer p {
@@ -308,6 +335,7 @@ footer {
   font-size: 12px;
   letter-spacing: .5px;
   color: #86848b;
+  font-family: "regular";
   
   
 }
@@ -317,6 +345,7 @@ footer {
   font-weight: 400;
   letter-spacing: .3;
   line-height: 25px;
+  font-family: "regular";
 }
 
 .divisor {
@@ -332,8 +361,6 @@ footer {
 .step h2 {
   width: auto;
   text-align:start;
-  
-  
   
 }
 
@@ -363,28 +390,9 @@ footer {
 .back a {
   display: flex;
   justify-content: left;
-  font-family: "Muli", sans-serif;
+  font-family: "regular";
   font-size: 18px;
   color: #7727B4;
 
 }
 
-
-
-/* @media (max-width: 400px) {
-  .cardTittle {
-    font-size: 18px;
-  }
-  .cardText{
-    font-size: 12px;
-  }
-  .guideTittle {
-    font-size: 22px;
-  }
-  .guideText {
-    font-size: 14px;
-  }
-
-
-
-} */
